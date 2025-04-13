@@ -16,10 +16,76 @@ html, body{
     background-color: #030303;
 }
 
+#crsr{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    /* background-color: white; */
+    border: 2px solid #ffffff7d;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
 #page1 {
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2vw 8.2vw;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero{
+ /* background-color: red; */
+ width: 70%;
+ height: fit-content;
+ margin-left: 29%;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ position: relative;
+ z-index: 9999;
+}
+
+.hero:nth-child(2) {
+    margin-top: 15vh;
+}
+.hero h1{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.24vw;
+}
+
+.hero h2, .hero h3{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.24vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 2px  #fff;
+    color: transparent;
+    font-weight: 500;
 }
 
 #loader{
@@ -79,6 +145,9 @@ html, body{
     color: #fff;
     font-weight: 500;
     opacity: 1;
+
+
+
     
     }
     48% {
@@ -87,6 +156,7 @@ html, body{
         color: #fff;
         font-weight: 500;
         opacity: 0;
+    
         
         }
    50% {
